@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "outDir": "build",
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "types": [
+            "node",
+            "grpc"
+        ],
+        "typeRoots": [
+            "./generated/"
+        ]
+    },
+    "include": [
+        "src/**/**.ts",
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
