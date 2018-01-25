@@ -17,7 +17,7 @@
   "scripts": {
     "start": "node build/greeter_server.js",
     "dev": "nodemon --watch ./src -e ts --exec \"npm run compile\"",
-    "compile": "npm run build:ts && npm run build:proto && npm start",
+    "compile": "npm run build:proto && npm run build:ts && npm start",
     "build:ts": "tsc",
     "build:proto": "protoc --plugin=protoc-gen-ts=./node_modules/.bin/protoc-gen-ts --js_out=import_style=commonjs,binary:generated --ts_out=service=true:generated -I ./protos ./protos/*.proto"
   }
